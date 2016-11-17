@@ -21,6 +21,11 @@ RUN HDF5_DIR=/usr/lib/x86_64-linux-gnu/hdf5/serial/ pip install h5py
 RUN mkdir /scripts
 COPY csi/ /scripts/csi/
 COPY html/ /scripts/html/
+
+#set up analysis crash text file
+RUN apt-get -y install git
+RUN git clone https://github.com/cyversewarwick/analysis_crash.git
+
 MAINTAINER Sam Mason <sam@samason.uk>
 ENTRYPOINT ["bash", "/scripts/csi/hcsi_tarwrapper.sh"]
 CMD ["--help"]
