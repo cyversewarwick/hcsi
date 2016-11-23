@@ -16,7 +16,7 @@ hCSI takes CSI as a base and creates an individual CSI fit for each perturbation
 
 ## Test Run
 
-If you want to take hCSI out for a spin without using your own data, this can be done with the aid of one of the 10-gene synthetic networks originally used in the CSI and hCSI publications. The dataset to be used on input can be found at `ktpolanski/hcsi_testdata/dream4_5.csv` under Community Data. Leave all the parameter values as defaults. hCSI is computationally intensive and it may take upwards of an hour for this analysis to be complete.
+If you want to take hCSI out for a spin without using your own data, this can be done with the aid of one of the 10-gene synthetic networks originally used in the CSI and hCSI publications. The dataset to be used on input can be found at `cyverseuk/hcsi_testdata/dream4_5.csv` under Community Data. Leave all the parameter values as defaults. hCSI is computationally intensive and it may take upwards of an hour for this analysis to be complete.
 
 ## Input in Detail
 
@@ -24,7 +24,7 @@ If you want to take hCSI out for a spin without using your own data, this can be
 
 ### Gene Expression CSV
 
-**Obligatory input.** Comma-delimited file, with expression data ordered to have genes as rows and time points as columns. In terms of headers, the first column should contain gene IDs, the first row should contain condition names (repeated for each time point part of the condition), and the second row should contain the corresponding time of the time point in that condition. For reference on formatting, consult `ktpolanski/hcsi_testdata/dream4_5.csv` under Community Data.
+**Obligatory input.** Comma-delimited file, with expression data ordered to have genes as rows and time points as columns. In terms of headers, the first column should contain gene IDs, the first row should contain condition names (repeated for each time point part of the condition), and the second row should contain the corresponding time of the time point in that condition. For reference on formatting, consult `cyverseuk/hcsi_testdata/dream4_5.csv` under Community Data.
 
 ### Parental Set Depth
 
@@ -90,7 +90,7 @@ hCSI_MarginalThreshold is a simple post-processing script which takes the margin
 
 ## Test Run
 
-If you want to try out the app, but don't have access to any hCSI results of your own yet, feel free to use all the `ktpolanski/hcsi_testdata/hcsi_output/hcsi_XXX.csv` files under Community Data. These are the hCSI results for the demonstration `dream4_5.csv` dataset, with one file for each of the perturbations (A through E) and the hypernetwork. The computational load of this script is negligible in comparison to hCSI proper, so feel free to experiment with different values of the threshold and assess the resulting networks in any desired downstream software of choice.
+If you want to try out the app, but don't have access to any hCSI results of your own yet, feel free to use all the `cyverseuk/hcsi_testdata/hcsi_output/hcsi_XXX.csv` files under Community Data. These are the hCSI results for the demonstration `dream4_5.csv` dataset, with one file for each of the perturbations (A through E) and the hypernetwork. The computational load of this script is negligible in comparison to hCSI proper, so feel free to experiment with different values of the threshold and assess the resulting networks in any desired downstream software of choice.
 
 ## Input
 
